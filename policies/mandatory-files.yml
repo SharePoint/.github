@@ -1,0 +1,51 @@
+# metadata
+name: mandatory files policy
+description: this policy will ensure the presence of important files in Microsoft project repositories.
+
+# filters
+resource: repository
+where:
+- |
+  repository.name.equals("sp-dev-docs-ref-typescript.pt-BR", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-custom-learning-template", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-client-spo-ref-dotnet", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.es-ES", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.fr-FR", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.ja-JP", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.pt-BR", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.ru-RU", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.zh-CN", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.de-DE", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.fr-FR", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.ja-JP", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.ru-RU", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.zh-CN", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-provisioning-templates", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-deployment", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-extensions", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-getting-started", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-graph-3rdpartyapis", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-spcontent", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-teams-dev", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-web-parts", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-webpart-proppane", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("viva-connections-desktop", StringComparison.InvariantCultureIgnoreCase)
+  
+
+# primitive configuration
+configuration:
+    mandatoryFiles:
+     issueTitle: This repo is missing important files
+     issueBody:  |
+          There are important files that Microsoft projects should all have that are not present in this repository. A pull request has been opened to add the missing file(s). When the pr is merged this issue will be closed automatically.
+          
+          Microsoft teams can [learn more about this effort and share feedback](https://docs.opensource.microsoft.com/releasing/maintain/templates/) within the open source guidance available internally.
+     prTitle: Adding Microsoft SECURITY.MD
+     prBody:  |
+           Please accept this contribution adding the standard Microsoft SECURITY.MD :lock: file to help the community understand the security policy and how to safely report security issues. GitHub uses the presence of this file to light-up security reminders and a link to the file. This pull request commits the latest official SECURITY.MD file from https://github.com/microsoft/repo-templates/blob/main/shared/SECURITY.md.
+           
+           Microsoft teams can [learn more about this effort and share feedback](https://docs.opensource.microsoft.com/releasing/maintain/templates/) within the open source guidance available internally.
+     file:
+      - path: SECURITY.md
+        prContentLink: https://raw.githubusercontent.com/microsoft/repo-templates/main/shared/SECURITY.md
