@@ -7,6 +7,31 @@ resource: repository
 where:
 - |
   repository.name.equals("alsdfjalsdjfasdflajs", StringComparison.InvariantCultureIgnoreCase) 
+  || repository.name.equals("sp-dev-docs-ref-typescript.pt-BR", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-custom-learning-template", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-client-spo-ref-dotnet", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.es-ES", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.fr-FR", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.ja-JP", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.pt-BR", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.ru-RU", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-pnp-ref-dotnet.zh-CN", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.de-DE", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.fr-FR", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.ja-JP", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.ru-RU", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-docs-ref-typescript.zh-CN", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-provisioning-templates", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-deployment", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-extensions", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-getting-started", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-graph-3rdpartyapis", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-spcontent", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-teams-dev", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-web-parts", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("sp-dev-training-spfx-webpart-proppane", StringComparison.InvariantCultureIgnoreCase)
+  || repository.name.equals("viva-connections-desktop", StringComparison.InvariantCultureIgnoreCase)
   
 
 # primitive configuration
