@@ -6,8 +6,7 @@ description: this policy will ensure the presence of important files in Microsof
 resource: repository
 where:
 - |
-  repository.name.equals("alsdfjalsdjfasdflajs", StringComparison.InvariantCultureIgnoreCase) 
-  || repository.name.equals("sp-dev-docs-ref-typescript.pt-BR", StringComparison.InvariantCultureIgnoreCase)
+  repository.name.equals("sp-dev-docs-ref-typescript.pt-BR", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("sp-custom-learning-template", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("sp-dev-docs", StringComparison.InvariantCultureIgnoreCase)
   || repository.name.equals("sp-dev-docs-client-spo-ref-dotnet", StringComparison.InvariantCultureIgnoreCase)
